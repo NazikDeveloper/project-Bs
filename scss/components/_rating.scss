@@ -1,0 +1,13 @@
+.rating-container {
+  display: flex;
+  align-items: center;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__rating {
+    color: var(--color-four);
+  }
+}

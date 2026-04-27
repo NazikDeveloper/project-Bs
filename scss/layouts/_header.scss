@@ -1,0 +1,101 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding-top: 24px;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100px;
+    height: 30px;
+    @media screen and (min-width: $bp-tablet) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    padding-right: 130px;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+
+  &__btn-login {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-one);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition-property: text-decoration, color, text-underline-offset;
+      transition-duration: 0.5s;
+
+      &:hover {
+        color: var(--color-two);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  &__btn-sign-up {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--color-two);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-three);
+      cursor: pointer;
+      margin-left: 20px;
+      transition-property:
+        background-color, color, text-decoration, text-underline-offset;
+      transition-duration: 0.5s;
+
+      &:hover {
+        color: var(--color-two);
+        background-color: transparent;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  &__burger {
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: var(--color-two);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
+
+

@@ -1,0 +1,11 @@
+.agree-terms {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-fourteen);
+  &__link {
+    color: var(--color-eleven);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

@@ -1,0 +1,108 @@
+.feature-section {
+  // @media screen and (min-width: $bp-desktop) {
+  //   padding-top: 50px;
+  // }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-between;
+      flex-direction: row;
+      padding-top: 60px;
+      margin-bottom: 74px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 331px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 350px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 461px;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn-get-started {
+    max-width: 162px;
+    padding: 18px 31px;
+    font-size: 18px;
+    color: var(--color-seven);
+    font-weight: 500;
+    background-color: var(--color-two);
+    border-radius: 70px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: var(--color-six);
+      color: var(--color-two);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 44px;
+      align-items: stretch;
+    }
+  }
+
+  &__items {
+    flex-basis: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 88px) / 3);
+    }
+  }
+
+  &__card-title {
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__card-description {
+    font-size: 15px;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      text-align: left;
+    }
+    &--last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-image {
+    width: 290px;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      width: auto;
+    }
+  }
+}

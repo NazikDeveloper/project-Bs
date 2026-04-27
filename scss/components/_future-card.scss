@@ -1,0 +1,19 @@
+.future-card {
+  &__image {
+    display: block;
+  }
+  &__title {
+    color: var(--color-four);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 30px 0 8px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 30px;
+      margin: 30px 0 20px 0;
+      font-weight: 600;
+    }
+  }
+  
+}

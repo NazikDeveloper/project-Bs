@@ -1,0 +1,115 @@
+.choose-card {
+  border-radius: 20px;
+  padding: 40px 20px 25px 20px;
+  background-color: var(--color-two);
+  box-shadow: 1px 2px 14px 0 var(--color-one);
+
+   &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-seven);
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 30px;
+      line-height: 1.44;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: var(--color-seven);
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__prise {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    color: var(--color-seven);
+
+    &--modification {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--color-seven);
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 50px;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-nine);
+    border-radius: 10px;
+    padding: 20px 20px;
+    gap: 18px;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 26px 30px;
+      gap: 22px;
+  
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 10px;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--color-two);
+    flex-shrink: 0;
+    @media screen and (min-width: $bp-tablet) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__advantages {
+    font-size: 14px;
+    color: var(--color-four);
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    align-self: center;
+    color: var(--color-two);
+    padding: 17px 17px;
+    border-radius: 20px;
+    background-color: var(--color-seven);
+    text-align: center;
+    margin-top: 13px;
+    transition-property: color background-color;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-color: var(--color-two);
+      color: var(--color-seven);
+    }
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      padding: 17px 65px;
+      border-radius: 20px;
+    }
+  }
+}
+
+

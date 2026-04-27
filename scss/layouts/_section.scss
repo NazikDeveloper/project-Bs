@@ -1,0 +1,26 @@
+.section {
+  width: 100%;
+  padding: 25px 0;
+  // padding: 45px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 50px 0;
+    // padding: 65px 0;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #191a15;
+    line-height: 1.44;
+    &--centered {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.23;
+    }
+  }
+}
