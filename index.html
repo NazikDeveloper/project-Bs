@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biccas</title>
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./images/hero-img.avif"
+      type="image/avif"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
@@ -15,7 +23,8 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <img class="header__image" src="./images/logo.png" alt="logo" />
+            <strong class="header__logo">Biccas</strong>
+            <!-- <img class="header__image" src="./images/logo.png" alt="logo" /> -->
             <ul class="header__menu">
               <li><a class="link" href="./index.html">Home</a></li>
               <li><a class="link" href="#support-section">Product</a></li>
@@ -48,16 +57,10 @@
             <nav class="mobile-menu__nav">
               <a class="mobile-menu__logo-link" href="./index.html">
                 <img src="./images/logo.png" alt="logo" />
-                <!-- <strong class="mobile-menu__logo-mobile text-uppercase"
-                  >shop<br />
-                  <span class="text-bold">bakery</span></strong
-                > -->
               </a>
               <ul class="mobile-menu__menu">
                 <li>
-                  <a class="mobile-menu__link" href="./index.html"
-                    >Home</a
-                  >
+                  <a class="mobile-menu__link" href="./index.html">Home</a>
                 </li>
                 <li>
                   <a class="mobile-menu__link" href="#support-section"
@@ -65,14 +68,10 @@
                   >
                 </li>
                 <li>
-                  <a class="mobile-menu__link" href="#feature-section"
-                    >FAQ</a
-                  >
+                  <a class="mobile-menu__link" href="#feature-section">FAQ</a>
                 </li>
                 <li>
-                  <a class="mobile-menu__link" href="#benifit-section"
-                    >Blog</a
-                  >
+                  <a class="mobile-menu__link" href="#benifit-section">Blog</a>
                 </li>
                 <li>
                   <a class="mobile-menu__link" href="#choose-section"
@@ -133,7 +132,8 @@
             </div>
             <img
               class="hero-section__image"
-              src="./images/hero-img.png"
+              fetchpriority="high"
+              src="./images/hero-img.avif"
               alt="happy men"
             />
           </div>
@@ -278,7 +278,7 @@
               <article class="feature-section__card future-card">
                 <img
                   class="feature-section__card-image future-card__image"
-                  src="./images/collaboration-teams.jpg"
+                  src="./images/collaboration-teams.webp"
                   alt="collaboration-teams"
                 />
                 <h3 class="feature-section__card-title future-card__title">
@@ -295,7 +295,7 @@
               <article class="feature-section__card future-card">
                 <img
                   class="feature-section__card-image future-card__image"
-                  src="./images/cloud-storage.jpg"
+                  src="./images/cloud-storage.webp"
                   alt="cloud-storage"
                 />
                 <h3 class="feature-section__card-title future-card__title">
@@ -313,7 +313,7 @@
               <article class="feature-section__card future-card">
                 <img
                   class="feature-section__card-image future-card__image"
-                  src="./images/daily-analystics.jpg"
+                  src="./images/daily-analystics.webp"
                   alt="daily-analystics"
                 />
                 <h3 class="feature-section__card-title future-card__title">
@@ -375,7 +375,7 @@
           </div>
           <img
             class="benifit-section__image"
-            src="./images/what-benifit.png"
+            src="./images/what-benifit.webp"
             alt="our offers"
           />
         </div>
@@ -744,22 +744,22 @@
             <div class="clients-images-container">
               <img
                 class="clients-images-container__images"
-                src="./images/footer-image-one.jpg"
+                src="./images/footer-image-one.webp"
                 alt="man watching"
               />
               <img
                 class="clients-images-container__images"
-                src="./images/footer-image-two.jpg"
+                src="./images/footer-image-two.webp"
                 alt="man watching"
               />
               <img
                 class="clients-images-container__images"
-                src="./images/footer-image-three.jpg"
+                src="./images/footer-image-three.webp"
                 alt="man watching"
               />
               <img
                 class="clients-images-container__images"
-                src="./images/footer-image-foure.jpg"
+                src="./images/footer-image-foure.webp"
                 alt="man watching"
               />
               <a class="btn-next-client" href="#">
@@ -980,12 +980,11 @@
         </form>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./js/choose-slider.js"></script>
-
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-login.js"></script>
-    <script src="./js/modal-sing-up.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="./js/choose-slider.js" defer></script>
+    <script src="./js/mobile-menu.js" defer></script>
+    <script src="./js/modal-login.js" defer></script>
+    <script src="./js/modal-sing-up.js" defer></script>
   </body>
 </html>
 

@@ -9,12 +9,13 @@
     align-items: center;
   }
 
-  &__image {
-    width: 100px;
-    height: 30px;
+  &__logo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-two);
     @media screen and (min-width: $bp-tablet) {
-      width: auto;
-      height: auto;
+      font-size: 50px;
     }
   }
 
@@ -97,5 +98,3 @@
     }
   }
 }
-
-
